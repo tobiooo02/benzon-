@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Zon - Blog</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Verdana, sans-serif;
+      background-color: #f4f7fc;
+      color: #333;
+    }
+
+    header {
+      background: #004aad;
+      color: white;
+      padding: 20px 0;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .header-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 2rem;
+      font-weight: bold;
+    }
+
+    .navbar ul {
+      list-style: none;
+      display: flex;
+      gap: 15px;
+      padding-left: 0;
+    }
+
+    .navbar a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      padding: 8px 12px;
+      border-radius: 4px;
+    }
+
+    .navbar a:hover {
+      background-color: rgba(255, 255, 255, 0.15);
+    }
+
+    main {
+      padding: 60px 20px;
+      background-color: #fff;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 2.5rem;
+      color: #004aad;
+      margin-bottom: 40px;
+    }
+
+    .blog-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+    }
+
+    .blog-card {
+      background-color: #eaf2ff;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      overflow: hidden;
+      transition: transform 0.3s;
+    }
+
+    .blog-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .blog-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .blog-content {
+      padding: 20px;
+    }
+
+    .blog-content h3 {
+      margin-top: 0;
+      color: #004aad;
+    }
+
+    .blog-content p {
+      line-height: 1.6;
+      font-size: 0.95rem;
+    }
+
+    .read-more {
+      display: inline-block;
+      margin-top: 10px;
+      color: #004aad;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .read-more:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      background-color: #222;
+      color: #ccc;
+      text-align: center;
+      padding: 20px 0;
+      font-size: 0.9rem;
+    }
+
+    footer a {
+      color: #66aaff;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container header-container">
+      <div class="logo">Zon</div>
+      <nav class="navbar">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about page.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="mission.html">Mission & Vision</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="testimonials.html">Testimonials</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="faq.html">FAQs</a></li>
+          <li><a href="profile.html">Web Designer</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h2 class="section-title">Latest Blog Posts</h2>
+    <div class="blog-grid">
+      <div class="blog-card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYrQIEWzKtzbO2TrxQgdU6xwlA_U8EZIKfxg&s" alt="Blog Post 1">
+        <div class="blog-content">
+          <h3>5 Ways Technology is Shaping Businesses in 2025</h3>
+          <p>Discover how emerging technologies like AI and cloud computing are transforming the business landscape in the Philippines and beyond.</p>
+          <a href="#" class="read-more">Read More</a>
+        </div>
+      </div>
+      <div class="blog-card">
+        <img src="https://www.charterglobal.com/wp-content/uploads/2024/12/5-Steps-for-SME-Digital-Transformation-1.jpg" alt="Blog Post 2">
+        <div class="blog-content">
+          <h3>Why Digital Transformation is a Must for SMEs</h3>
+          <p>Learn the key reasons small and medium enterprises must embrace digital transformation to stay competitive and efficient.</p>
+          <a href="#" class="read-more">Read More</a>
+        </div>
+      </div>
+      <div class="blog-card">
+        <img src="https://netcomp.com.au/wp-content/uploads/2023/04/G11-The-3-Cybersecurity-Factors-1024x536.png" alt="Blog Post 3">
+        <div class="blog-content">
+          <h3>Cybersecurity Tips Every Business Should Know</h3>
+          <p>Protect your company data and online assets with these essential cybersecurity strategies and best practices.</p>
+          <a href="#" class="read-more">Read More</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Zon. All rights reserved.</p>
+    <p>
+      Follow us on 
+      <a href="#">Facebook</a> |
+      <a href="#">Twitter</a> |
+      <a href="#">LinkedIn</a>
+    </p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Zon - Home</title>
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      background-color: #f5f8fc;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1100px;
+      margin: 40px auto 80px;
+    }
+
+    header {
+      background-color: #004aad;
+      color: white;
+      padding: 20px 0;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+    }
+
+    .header-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 90%;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .logo {
+      font-weight: bold;
+      font-size: 1.8rem;
+      letter-spacing: 1px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 18px;
+      flex-wrap: wrap;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      padding: 8px 12px;
+      border-radius: 4px;
+      transition: background-color 0.3s ease;
+      font-weight: 600;
+    }
+
+    nav ul li a:hover {
+      background-color: #032d75;
+    }
+
+    /* Common section styles */
+    section {
+      border: 1.5px solid #004aad;
+      border-radius: 10px;
+      margin-bottom: 50px;
+      background-color: #fff;
+      box-shadow: 0 4px 12px rgba(0,74,173,0.1);
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      gap: 40px;
+      padding: 40px 50px;
+    }
+
+    /* Ensure sections are horizontally aligned */
+    section .text, section .text-block, section .overlay-text {
+      max-width: 550px;
+    }
+
+    /* Image styling for side images */
+    section .image, section .image-block, section img {
+      flex-shrink: 0;
+      width: 45%;
+      border-radius: 10px;
+      box-shadow: 0 6px 15px rgba(0,74,173,0.15);
+      object-fit: cover;
+      height: 320px;
+    }
+
+    /* Design 1 */
+    .design1 {
+      background-color: #e8f0fe;
+    }
+    .design1 .text h1 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      color: #004aad;
+    }
+    .design1 .text p {
+      font-size: 1.15rem;
+      margin-bottom: 25px;
+      color: #222;
+    }
+    .design1 a {
+      background: #004aad;
+      color: #fff;
+      padding: 12px 28px;
+      border-radius: 6px;
+      font-weight: 700;
+      text-decoration: none;
+      display: inline-block;
+      transition: background-color 0.3s ease;
+      font-size: 1rem;
+    }
+    .design1 a:hover {
+      background-color: #032d75;
+    }
+
+    /* Design 2 */
+    .design2 {
+      background: #d9e6fc;
+      position: relative;
+      gap: 30px;
+    }
+    .design2 img {
+      width: 45%;
+      height: 320px;
+      border-radius: 10px;
+      box-shadow: 0 6px 15px rgba(0,74,173,0.15);
+      object-fit: cover;
+    }
+    .design2 .overlay-text {
+      max-width: 550px;
+      color: #004aad;
+    }
+    .design2 h1 {
+      font-size: 2.5rem;
+      margin-bottom: 18px;
+    }
+    .design2 p {
+      font-size: 1.15rem;
+    }
+
+    /* Design 3 */
+    .design3 {
+      background-color: #fff;
+      box-shadow: 0 4px 20px rgba(0,74,173,0.1);
+    }
+    .design3 .text-block {
+      background: #004aad;
+      color: white;
+      padding: 40px 50px;
+      border-radius: 10px;
+      max-width: 550px;
+      flex: none;
+      box-shadow: 0 6px 20px rgba(0,74,173,0.2);
+    }
+    .design3 .text-block h1 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+    .design3 .text-block p {
+      font-size: 1.15rem;
+      line-height: 1.5;
+    }
+    .design3 .text-block a {
+      margin-top: 30px;
+      background: #e6f0ff;
+      color: #004aad;
+      padding: 12px 28px;
+      font-weight: 700;
+      border-radius: 6px;
+      text-decoration: none;
+      display: inline-block;
+      transition: background-color 0.3s ease;
+      font-size: 1rem;
+    }
+    .design3 .text-block a:hover {
+      background-color: #c3d2ff;
+    }
+    .design3 .image-block {
+      width: 45%;
+      height: 320px;
+      border-radius: 10px;
+      background: url('images/hero3.jpg') center/cover no-repeat;
+      box-shadow: 0 6px 15px rgba(0,74,173,0.15);
+      flex-shrink: 0;
+    }
+
+    /* Design 4 */
+    .design4 {
+      flex-direction: column;
+      text-align: center;
+      padding: 40px 40px 30px;
+    }
+    .design4 h1 {
+      font-size: 2.7rem;
+      color: #004aad;
+      margin-bottom: 18px;
+    }
+    .design4 p {
+      font-size: 1.15rem;
+      color: #333;
+      margin-bottom: 30px;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .design4 img {
+      width: 100%;
+      max-width: 450px;
+      border-radius: 20px;
+      box-shadow: 0 8px 15px rgba(0, 74, 173, 0.25);
+      height: auto;
+    }
+
+    /* Design 5 */
+    .design5 {
+      position: relative;
+      background-color: #002e80;
+      border-color: transparent;
+      padding: 60px 50px;
+      color: white;
+      flex-direction: column;
+      text-align: center;
+      gap: 20px;
+    }
+    .design5 img {
+      display: none; /* Hide the image, keep solid background */
+    }
+    .design5 .overlay-text {
+      max-width: 700px;
+      margin: 0 auto;
+    }
+    .design5 h1 {
+      font-size: 2.8rem;
+      margin-bottom: 20px;
+      font-weight: 700;
+    }
+    .design5 p {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+      line-height: 1.4;
+    }
+    .design5 a {
+      background: #0066ff;
+      padding: 14px 32px;
+      border-radius: 8px;
+      font-weight: 700;
+      color: white;
+      text-decoration: none;
+      font-size: 1rem;
+      transition: background-color 0.3s ease;
+      display: inline-block;
+      width: max-content;
+    }
+    .design5 a:hover {
+      background-color: #004aad;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 20px 0;
+      background-color: #222;
+      color: #ddd;
+      font-size: 0.9rem;
+    }
+
+    footer a {
+      color: #66aaff;
+      text-decoration: none;
+      margin: 0 6px;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      section {
+        flex-direction: column;
+        padding: 30px 25px;
+      }
+      section .image, section .image-block, section img {
+        width: 100%;
+        height: 220px;
+        margin-bottom: 25px;
+      }
+      .design4 img {
+        max-width: 100%;
+      }
+      nav ul {
+        justify-content: center;
+        gap: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <div class="logo">Zon</div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about page.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="mission.html">Mission & Vision</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="testimonials.html">Testimonials</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="faq.html">FAQs</a></li>
+          <li><a href="profile.html">Web Designer</a></li>
+        </ul>
+      </nav>
+      
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- Design 1 -->
+    <section class="design1" aria-label="Classic side-by-side hero section">
+      <div class="image" role="img" aria-label="Technology abstract background" style="background: url('https://elearningindustry.com/wp-content/uploads/2024/04/Shutterstock_1315649687.jpg') center/cover no-repeat;"></div>
+      <div class="text">
+        <h1>Empowering Your Business with Cutting-Edge Technology</h1>
+        <p>At Zon, we specialize in delivering innovative and tailor-made IT services that help your business grow and thrive in the digital age.</p>
+        <a href="services.html" class="btn-primary">Explore Our Services</a>
+      </div>
+    </section>
+
+    <!-- Design 2 -->
+    <section class="design2" aria-label="Text over image with background">
+      <img src="https://investingnews.com/media-library/robot-hand-touching-human-hand-with-a-spark-in-between.jpg?id=33553684&width=1245&height=700&coordinates=0%2C130%2C0%2C131" alt="Technology concept" />
+      <div class="overlay-text">
+        <h1>Innovate, Integrate, Elevate</h1>
+        <p>We provide scalable solutions designed to drive your digital transformation journey forward.</p>
+      </div>
+    </section>
+
+    <!-- Design 3 -->
+    <section class="design3" aria-label="Split with color block hero section">
+      <div class="text-block">
+        <h1>Solutions That Drive Success</h1>
+        <p>From software development to IT consulting, our expertise delivers measurable results tailored to your business needs.</p>
+        <a href="services.html" class="btn-primary">Learn More</a>
+      </div>
+      <img src="https://blog.foreworth.com/hubfs/Tech%20Solutions.jpg" alt="">
+    </section>
+
+    <!-- Design 4 -->
+    <section class="design4" aria-label="Centered content with rounded image">
+      <h1>Partnering for Your Growth</h1>
+      <p>Our dedicated team works closely with you to build custom solutions that make a real impact.</p>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQ2k8cJoPdr3b_Ll96oIkkwzBtzV4dH17Cnw&s" alt="Team collaborating on technology solutions" />
+    </section>
+
+    <!-- Design 5 -->
+    <section class="design5" aria-label="Full width background with overlay text">
+      <div class="overlay-text">
+        <h1>Future-Ready IT Services</h1>
+        <p>Stay ahead of the curve with our cutting-edge technology solutions tailored for tomorrow’s challenges.</p>
+        <a href="services.html">Get Started Today</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Zon. All rights reserved.</p>
+    <p>
+      Follow us on
+      <a href="#" aria-label="Facebook">Facebook</a> |
+      <a href="#" aria-label="Twitter">Twitter</a> |
+      <a href="#" aria-label="LinkedIn">LinkedIn</a>
+    </p>
+  </footer>
+</body>
+</html>

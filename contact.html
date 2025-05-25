@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Zon - Contact Us</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Verdana, sans-serif;
+      background-color: #f4f7fc;
+      color: #333;
+    }
+
+    header {
+      background: #004aad;
+      color: white;
+      padding: 20px 0;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .header-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 2rem;
+      font-weight: bold;
+    }
+
+    .navbar ul {
+      list-style: none;
+      display: flex;
+      gap: 15px;
+      padding-left: 0;
+    }
+
+    .navbar a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      padding: 8px 12px;
+      border-radius: 4px;
+    }
+
+    .navbar a:hover {
+      background-color: rgba(255, 255, 255, 0.15);
+    }
+
+    main {
+      padding: 60px 20px;
+      background-color: #fff;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 2.5rem;
+      color: #004aad;
+      margin-bottom: 40px;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 40px;
+      margin-bottom: 40px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1rem;
+    }
+
+    .contact-form textarea {
+      resize: vertical;
+      min-height: 120px;
+    }
+
+    .contact-form button {
+      background-color: #004aad;
+      color: white;
+      padding: 12px 24px;
+      font-size: 1rem;
+      font-weight: bold;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    .contact-form button:hover {
+      background-color: #032d75;
+    }
+
+    .contact-info {
+      background-color: #eaf2ff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+
+    .contact-info h3 {
+      color: #004aad;
+      margin-bottom: 20px;
+    }
+
+    .contact-info p {
+      line-height: 1.6;
+    }
+
+    iframe {
+      width: 100%;
+      height: 300px;
+      border: 0;
+      border-radius: 12px;
+    }
+
+    footer {
+      background-color: #222;
+      color: #ccc;
+      text-align: center;
+      padding: 20px 0;
+      font-size: 0.9rem;
+    }
+
+    footer a {
+      color: #66aaff;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container header-container">
+      <div class="logo">Zon</div>
+      <nav class="navbar">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about page.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="mission.html">Mission & Vision</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="testimonials.html">Testimonials</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="faq.html">FAQs</a></li>
+          <li><a href="profile.html">Web Designer</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h2 class="section-title">Contact Us</h2>
+    <div class="contact-grid">
+      <div class="contact-form">
+        <form action="#" method="post">
+          <input type="text" name="name" placeholder="Your Name" required />
+          <input type="email" name="email" placeholder="Your Email" required />
+          <textarea name="message" placeholder="Your Message" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+      <div class="contact-info">
+        <h3>Get In Touch</h3>
+        <p><strong>Address:</strong>1214 ilang ilang st, cubul sapalibutad, angeles city</p>
+        <p><strong>Phone:</strong> +63 995 277 3400</p>
+        <p><strong>Email:</strong> wajebenzon23@gmail.com</p>
+        <p><strong>Hours:</strong> Mon-Fri 9:00 AM - 6:00 PM</p>
+      </div>
+    </div>
+
+    <!-- Optional Google Maps Embed -->
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3859.8278145957864!2d121.0211233151266!3d14.55634798983527!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c86164378fb3%3A0x8178c2f99489e3c4!2sMakati%2C%20Metro%20Manila!5e0!3m2!1sen!2sph!4v1670000000000"
+      allowfullscreen="" loading="lazy">
+    </iframe>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Zon. All rights reserved.</p>
+    <p>
+      Follow us on 
+      <a href="#">Facebook</a> |
+      <a href="#">Twitter</a> |
+      <a href="#">LinkedIn</a>
+    </p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Zon - Web Designer Profile</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Verdana, sans-serif;
+      background-color: #f4f7fc;
+      color: #333;
+    }
+
+    header {
+      background-color: #004aad;
+      color: white;
+      padding: 20px 0;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .header-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 2rem;
+      font-weight: bold;
+    }
+
+    .navbar ul {
+      list-style: none;
+      display: flex;
+      gap: 15px;
+      padding-left: 0;
+    }
+
+    .navbar a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      padding: 8px 12px;
+      border-radius: 4px;
+    }
+
+    .navbar a:hover {
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    main {
+      padding: 60px 20px;
+      background-color: #fff;
+    }
+
+    .profile {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+      align-items: center;
+    }
+
+    .profile-img {
+      flex: 1;
+      max-width: 300px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .profile-details {
+      flex: 2;
+    }
+
+    .profile-details h2 {
+      color: #004aad;
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+
+    .profile-details p {
+      line-height: 1.6;
+      margin-bottom: 10px;
+    }
+
+    .skills {
+      margin-top: 20px;
+    }
+
+    .skills h3 {
+      color: #004aad;
+      margin-bottom: 10px;
+    }
+
+    .skills ul {
+      list-style: square;
+      padding-left: 20px;
+    }
+
+    footer {
+      background-color: #222;
+      color: #ccc;
+      text-align: center;
+      padding: 20px 0;
+      font-size: 0.9rem;
+    }
+
+    footer a {
+      color: #66aaff;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      .profile {
+        flex-direction: column;
+        text-align: center;
+      }
+      .profile-img {
+        margin-bottom: 20px;
+      }
+      .profile-details {
+        text-align: left;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container header-container">
+      <div class="logo">Zon</div>
+      <nav class="navbar">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="mission.html">Mission & Vision</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="testimonials.html">Testimonials</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="faq.html">FAQs</a></li>
+          <li><a href="profile.html">Web Designer</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="profile">
+      <img src="https://images.theconversation.com/files/4168/original/Jobby.jpg?ixlib=rb-4.1.0&q=45&auto=format&w=926&fit=clip" alt="Steve Jobs" class="profile-img">
+      <div class="profile-details">
+        <h2>Steve Jobs</h2>
+        <p>Steve Jobs was a pioneer of personal computing, design innovation, and intuitive user experiences. As our featured web designer at Zon, Steve's legacy inspires creativity, minimalism, and functionality in every project.</p>
+        <p>His influence ensures that each website we create is not only visually striking but also deeply connected to the user’s needs, delivering purpose-driven design backed by innovation.</p>
+
+        <div class="skills">
+          <h3>Key Skills:</h3>
+          <ul>
+            <li>Minimalist Web Design</li>
+            <li>Creative Direction & Branding</li>
+            <li>User Experience Design</li>
+            <li>Product Innovation Strategy</li>
+            <li>Typography & Layout Mastery</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Zon. All rights reserved.</p>
+    <p>
+      Follow us on 
+      <a href="#">Facebook</a> |
+      <a href="#">Twitter</a> |
+      <a href="#">LinkedIn</a>
+    </p>
+  </footer>
+</body>
+</html>
